@@ -28,7 +28,11 @@ class _MyAppState extends State<MyApp> {
           children: [
             Text(_mainText),
             RaisedButton(
-              onPressed: () {},
+              onPressed: () {
+                setState(() {
+                  _mainText = 'This changed!';
+                });
+              },
               child: Text('Change text'),
             )
           ],
