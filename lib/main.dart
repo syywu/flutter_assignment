@@ -16,6 +16,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  String _mainText = 'This is some text';
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -25,7 +26,7 @@ class _MyAppState extends State<MyApp> {
         ),
         body: Column(
           children: [
-            Text('This is some text'),
+            Text(_mainText),
             RaisedButton(
               onPressed: () {},
               child: Text('Change text'),
