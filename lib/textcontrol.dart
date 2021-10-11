@@ -15,7 +15,6 @@ class _TextControlState extends State<TextControl> {
     // TODO: implement build
     return Column(
       children: [
-        Text(_mainText),
         RaisedButton(
           onPressed: () {
             setState(() {
