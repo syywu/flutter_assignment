@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'text.dart';
 
 class TextControl extends StatefulWidget {
   @override
@@ -22,7 +23,8 @@ class _TextControlState extends State<TextControl> {
             });
           },
           child: Text('Change text'),
-        )
+        ),
+        TextOutput(_mainText)
       ],
     );
   }

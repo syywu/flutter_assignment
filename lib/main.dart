@@ -4,19 +4,11 @@
 // 3) Split the app into three widgets: App, TextControl & Text
 
 import 'package:flutter/material.dart';
+import 'package:flutter_assignment/textcontrol.dart';
 
 void main() => runApp(MyApp());
 
-class MyApp extends StatefulWidget {
-  @override
-  State<StatefulWidget> createState() {
-    // TODO: implement createState
-    return _MyAppState();
-  }
-}
-
-class _MyAppState extends State<MyApp> {
-  
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -24,7 +16,7 @@ class _MyAppState extends State<MyApp> {
         appBar: AppBar(
           title: Text('My App'),
         ),
-        body: 
+        body: TextControl(),
       ),
     );
   }
